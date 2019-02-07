@@ -1,0 +1,23 @@
+function setup() {
+  createCanvas(400, 400);
+
+}
+
+function draw() {
+  background(225);
+
+  if (mouseIsPressed) {
+    if (mouseX > 170) {
+      if (mouseX < 220) {
+        if (mouseY > 170) {
+          if (mouseY < 220) {
+            background(0, 255, 0);
+          }
+        }
+      }
+    }
+  } else {
+    background(225);
+  }
+  rect(170, 170, 50, 50)
+}
